@@ -1,0 +1,83 @@
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans:400,700";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #eee;
+}
+
+body a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+
+.card:hover .card-front {
+    transform: rotateX(-180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateX(0deg);
+}
+
+.card-front {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://lh3.googleusercontent.com/JLNbFYStDGz-z5KmRKQzdj9LL90ON0--N5GdJG42aSC6XNRt4OLzFcBGZn4TmN3VYlEsrYTg0Z109A-Edm7_GN0SHUwyveA6JRD9lzf-zDQg8GRPsExr_j5S_hWrMqi7l9Mxe2CxE0MDKzc_oOnsNSbB9hIbn5u3wY5AfO7nTcZtG6qgT62GxRXZ6MmTrNSB3Xltpg2DEquN88op2TPl33y9YRKl0OGTBwwd3NDxEgXIk33RMm3e73jgCZBTbhUOZ6Rj4E1EebZhP1za_IhhxPVmfBgc_4mBaSZe3hI5OvpKKG2Se8haXGSODEJ9MrbzA-rPGhhics2HXEFFA3d8YyIVeudwxbxgxpAxYQmtKQSp9Ue3txXkegIwkJNZB4XQ98c2VhjTkreH5FGIZsCnQW3Fvzg9ySLWizSockDJ_RbMDcjQssBOZu1qPTkG7F1FcC32kRljtiiebr9Kx5_gpfEpZnttBK8NiXJNLP0H-mbtbaNLYwpg8LmZKmb9NI39Q2nikMNEIurI5DCVwNywVst_sicDJ0KAv7u8s1oyMnxR8nmU5kmYUBpca5GMKyLNUjeuQ72zDB2LY1Hm4UKdtKBTeI5Dg8IY8DyjWNMCyGBcpSwAJty5NHUlOLhBLm-ks10YtnB1MPSvwdm7Co8dgUsVOVqxg-s=w834-h625-no);
+    background-position: 30% 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+
+.card-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    color: #ffffff;
+    text-align: center;
+}
+
+.card-back h2 {
+    margin: 60% auto 35% auto;
+    font-size: 26px;
+}
+
+.card-back h2 span {
+    font-size: 20px;
+}
+
+.card-back a {
+    height: 20px;
+    width: 20px;
+    padding: 5px 5px;
+    border-radius: 4px;
+    line-height: 20px;
+}
+
+.card-back a:hover {
+    color: #000000;
+    background-color: #fff;
+}
